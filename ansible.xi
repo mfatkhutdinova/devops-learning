@@ -1,39 +1,60 @@
+Установка на Ubuntu 16.04 .
+  sudo apt-add-repository ppa:ansible/ansible .
+  sudo apt-get update .
+  sudo apt-get install ansible .
+
+Узнать версию .
+  ansible --version .
+
 Проверяет доступность серверов .
   ping .
 Спросить пароль для безопасности .
   --ask-pass .
 
+Показывает все сервера, переменные, коорые используются .
+  ansible-inventory --list .
 
-ansible-inventory --list .  
-ansible-inventory --list 
-ansible-inventory --graph 
+Показывает все группы, сервера, переменные ввиде графа .
+  ansible-inventory --graph .
 
+Посмотреть настройки серверов .
+  ansible all -m setup .
 
-ansible all -m setup  – настройки серверов
+На всех серверах запускаме команду shell .
+  ansible all -m shell –a <комманда> .
 
-ansible all -m shell –a “комманда”
+То же самое, что и shell, только некоторые команды не работают. Он не видит переменные окружения, grep, аутпуты и т.д. .
+  ansible all -m command -a <команда> .
 
-ansible all -m command -a “команда” – то же самое, что и shell, только некоторые команды не работают. Он не видит переменные окружения, grep, аутпуты и т.д.
+Скопировать файл privet.txt на все сервера в директорию /home. –b означает sudo .
+  ansible all -m copy –a “scr=privet.txt dest=/home mode=777” –b .
 
-ansible all -m copy –a “scr=privet.txt dest=/home mode=777” –b 
+Удалить файл file.txt со всех серверов .
+  ansible all -m file -a “path=/home/file.txt state=absent” -b .
 
--b означает, что sudo
+Скачать, что угодно с интернета на все сервера .
+  ansible all -m get_url –a "url=url dest=/home" -b .
 
-ansible all -m file -a “path=/home… state=absent” -b 
+На все сервера установить программу stress .
+  ansible all –m yym –a "name=stress state=installed" –b .
 
-Скачать, что угодно с интернета .
-  ansible all -m get url –a "url=url dest=/home" -b .
+Можно ли подконнектиться к сайту? .
+  ansible all –m uri –a "url=https://..." –b .
 
-ansible all –m yym –a “name=stress state=installed” –b
+Возвращает, что написано на сайте интернета .
+  ansible all –m uri –a "url=https://... return_content=true" –b .
 
-ansible all –m uri –a “url=url” –b можно ли подконнектиться к сайту? 
+Установка программ (апаче) на всех серверах .
+  ansible all –m yum –a "name=httpd state=latest" –b .
 
-ansible all –m uri –a “url=url return_content=true” –b – возвращает, что написано на сайте интернета
+Запустить плейбук .
+  ansible-playbook playbook.yml .
 
-ansible all –m yum –a “name=httpd state=latest” –b – установка вебсайта 
+Добавление в конце дает больше информации при запуске плейбука .
+    -v, -vv, -vvv, -vvvv .
 
-ansible-playbook playbook.yml
+Внешние переменные .
+  extra-vars, extra-var .
 
-extra-vars, extra-var – внешние переменные 
-
-delegate_to – дает понять, что выполнять таск нужно на определенном сервере 
+Дает понять, что выполнять таск нужно на определенном сервере .
+  delegate_to .
