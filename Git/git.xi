@@ -4,6 +4,9 @@
 Клонировать ветку .
   git clone -b <branch> <remote_repo> .
 
+Добавить в соммит удаление файла .
+  git rm file.txt .
+
 Пинудительно добавляем файл в коммит .
   git add -f file.py .
 
