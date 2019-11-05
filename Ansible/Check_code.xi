@@ -24,5 +24,3 @@ syntax-check .
   Запуск: .
     molecule test .
     molecule --debug test .
-    
-  
