@@ -96,3 +96,4 @@
   systemctl reboot | poweroff | suspend | hibernate | hybrid-sleep 
   systemctl start | reload | restart | status 
   
+Инициализация системы в стиле upstart .
