@@ -12,3 +12,7 @@ systemctl restart zeppelin@orc - рестарт инстанса
 
 df -h: показывает все примонтированные шары 
 cat /etc/fstab: показывает все примонтированные шары 
+
+grep -rl 'qw' test/ | xargs sed -i 's/qw/LO/g'
+curl -O https://raw.githubusercontent.com/curl/curl/master/README.md - скачать файл с аким же именем 
+curl -T login.txt ftp://speedtest.tele2.net/upload/ - передать файл 
