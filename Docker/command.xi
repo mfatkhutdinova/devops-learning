@@ -13,3 +13,4 @@ docker kill — «убивает» контейнер
 docker rm — удаляет контейнер
 docker rmi — удаляет образ
 docker volume ls — список томов
+docker inspect image_name - выводит подробеую инфу об образе 
