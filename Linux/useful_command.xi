@@ -16,3 +16,9 @@ cat /etc/fstab: показывает все примонтированные ш�
 grep -rl 'qw' test/ | xargs sed -i 's/qw/LO/g'
 curl -O https://raw.githubusercontent.com/curl/curl/master/README.md - скачать файл с аким же именем 
 curl -T login.txt ftp://speedtest.tele2.net/upload/ - передать файл 
+
+sudo mkdir /mnt/zeppelin_exchange/
+sudo mount.cifs -o username=i.v.demin //fs-nfsmb/zeppelin_exchange$ /mnt/zeppelin_exchange/
+
+Сколько ядер в системе?
+cat /proc/cpuinfo | grep 'cpu cores'
