@@ -72,14 +72,91 @@ FastCgi .
 Лимиты в Nginx .
   1. Параллельное соединение 
   2. Одновременные подключения  
-  
+
   limit_conn_zone $server_name zone=pre_vhost:5m;
   limit_conn_zone $binary_remote_addr zone=per_ip::5m;
+  limit_req_zone $binary_remote_addr zone=one_per_sec:5m rate=1r/s;
 
+Video Streaming .
+  Для установки: --with-http_mp4_module 
+  Нужен для обработки файла 
+  Можно контролировать скорость передачи ответа клиенту и размер буфера 
 
+  location ~ \.mp4$ {
+    root /sites/downloads/;
+    mp4;
+    mp4_buffer_size 4M;
+    mp4_max_buffer_size 10M;
+  }
 
+GeoIp .
+  Для установки: --with-http_geoip_module 
+  apt-get install libgeoip-dev
+  БД нужно скачать на dev.maxmind.com 
 
+  geoip_country /etc/nginx/geoip/GeoIP.dat;
+  geoip_city /etc/nginx/geoip/GeoLiteCity.dat;
 
+  location /geo_country {
+    return 200 "Visiting from: $geoip_country_name";
+  }
 
+HTTP2 Nginx .
+  - бинарный протокол (компактный способ передачи данных)
+  - сжатие заголовков 
+  - постоянные соединения
+  - мультиплексные потоки 
+  - ресверные push'ы
 
+  http1 = 3 соединения (просмотр обычной страницы)
+  http2 = 1 соедиинение 
 
+  --with-http_v2_module 
+  --with-http_ssl_module 
+
+  server {
+    listen 443 ssl http2;
+    server_name localhost;
+
+    ssl_certificate     /usr/local/nginx/ssl/nginx.crt;
+    ssl_certificate_key /usr/local/nginx/ssl/nginx.key;
+
+    ssl_session_cache shared:SSL:1m;
+    ssl_session_timeout 5m;
+
+    ssl_prefer_server_ciphers off;
+
+    location / {
+      root html;
+      index index.html index.httm;
+    }
+
+  }
+
+Аутентификация .
+  apt-get-install apache-utils
+  sudo htpasswd -c /etc/nginx/.htpassw stackacademy (создание пароля)
+
+  ayth_basic "Restricted Content";
+  auth_basic_user_file /etc/nginx/.htpassw;
+
+Безопасность .
+  - отключите серверные токены
+  - удалите неиспользуемые модули 
+  - задайте разммеры буферов 
+  - заблокируйте юзер агенты: if($http_user_agent ~* badbot) {return 403}
+  - настройте X-Frame-Options: add_header X-Frame-Options SAMEORIGIN;
+
+  http://modsecurity.org
+
+Lets Encrypt .
+  бесплатные сертификаты 
+  certbot --nginx 
+  обновление сертификатов можно автоматизировать
+  @daily certbot renew 
+
+Обратный прокси и балансировка .
+
+Балансировщик нагрузки .
+  - обеспечивает равномерную нагрузку на всех серверах 
+  - если один сервер вышел из строя, то запрос все равно должен отработать 
