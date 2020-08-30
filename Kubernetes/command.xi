@@ -20,3 +20,12 @@ Get Help .
 kubectl [command] --help  - получение описания команды, примеров использования и опций 
 kubectl help - получение списка доступных команд 
 kubectl explain [pod|replicaset|deployment|...] - получение описания объекта определенного типа
+
+Основы работы с Helm .
+  helm search - поиск чарта 
+  helm install - установка чарта 
+  helm upgrade - обновление чарта 
+  helm get - скачать чарт
+  helm show - показать инфу о чарте 
+  helm list - список утсановленных чартов 
+  helm uninstall - удалить чарт 
