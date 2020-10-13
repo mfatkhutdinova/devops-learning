@@ -22,3 +22,5 @@ sudo mount.cifs -o username=i.v.demin //fs-nfsmb/zeppelin_exchange$ /mnt/zeppeli
 
 Сколько ядер в системе?
 cat /proc/cpuinfo | grep 'cpu cores'
+
+chown -h zeppelin:zeppelin zeppelin_data
