@@ -31,6 +31,7 @@ docker ps - список всех запущенных контейнеров
 docker volume ls — список томов
 docker container ls -s - узнавать размеры образов и контейнеров Docker
 docker version — вывод сведений о версиях клиента и сервера Docker. 
+docker network ls - вывод network
 
 Команда, которая позволяет быстро остановить все работающие контейнеры:
 docker container kill $(docker ps -q) 
@@ -39,3 +40,6 @@ docker volume create —-name my_volume - создание тома
 docker volume ls - просмотреть список томов Docker
 docker volume rm my_volume - удаление тома 
 docker volume prune - удалить все тома
+
+
+docker run -v /opt/data:/var/lib/mysql -d --name=mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 mysql
