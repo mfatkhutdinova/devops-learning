@@ -116,6 +116,20 @@ EBS - Elastic Block Store (hard disks)
   - Thoughput Optimized HDD (ST1)
   - Cold HDD (SC1)
 
+Instance - виртуальный сервер 
+Volume - HDD/SSD диск
+
+Snapshot - резервная копия Volume 
+AMI - резервня копия Instance 
+
+AMI - Amazon Machine Images 
+
+Reboot Instance - инстанс будет работать в том же дата центре.
+Stop, Start - инстанс будет работать в другом дата центре, ip адрес поменяется 
+
+Bootstrapping 
+При настройке инстанса в разделе Advanced можно написать код, который должен выполниться при настройке инстанса. 
+Лог можно посмотреть в /var/log/cloud-init-output.log 
 
 
 
