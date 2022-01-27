@@ -52,3 +52,35 @@ Subnet CIDR:
 - 10.0.21.0/24 -> Servers IP range (10.0.21.0 - 10.0.21.255)
 - 10.0.22.0/24 -> Servers IP range (10.0.22.0 - 10.0.22.255)
 
+К одной VPC можно приаттачить только ОДИН Internet Gateway 
+Один Subnet - ОДНА Availability zone 
+
+Чтобы был доступ в интернет через Internet Gateway, нужно отредачить Route table. И добавить туда Internet Gateway 
+По умолчанию Network ACL - пропускает весь трафик in и out 
+Необходимо создать новый Security Group и к нему приаттачить новый VPC 
+
+
+VPC Flow Logs 
+Лог файлы всех сетевых пакетов в вашей сети, на уровне:
+1. VPC
+2. Subnet
+3. Network Interface 
+
+Прежде всего нужно создать 
+IAM Role и указать разрешение записывать события с ClowdWatch Logs 
+CloudWatch - мониторинг ресурсов 
+
+VPC Peering - это соединение VPC сетей, дает возможность общения серверов в одной VPC серверами в другой VPC, используя PrivateIP адреса.
+Соединить можно только сети в одном и том же регионе AWS.
+И только если CIDR Block не прекращается, то есть нет одинаковых адрессов.
+
+Для трех VPC должно быть 3 VPC Peereing:
+VPC 1 - VPC 2 
+VPC 2 - VPC 3
+VPC 3 - VPC 1
+
+VPN
+1. Virtual Private Gateway - создается в VPC 
+2. Customer Gateway - создается в вашей (домашней, офисной) сети 
+
+
