@@ -29,5 +29,6 @@ Amazon VPC - virtual private cloud, сети
 Amazon Route 53 - DNS. Тут можно купить домены
 Amazon SES - сервер emal-ов
 Amazon SNS - нотификация. Посылаем email-ы, sms-ки и т.д.
-Amazon SQS - тоже для нотификации
+Amazon SQS - хранилище сообщений 
+Amazon Route 53 - регистрация домена для сайта
 
