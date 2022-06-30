@@ -1,3 +1,5 @@
+AWS Certificate Manager
+
 HTTP - HyperText Transfer Protocol (не защищена)
 HTTPS - HyperText Transfer Protocol Secure. HTTPS = HTTP + SSL/TLS  (защищена, зашифрована с помощью сертификатов)
 
@@ -16,3 +18,5 @@ SSL/TLS сертификаты приаттачиваются к таким ре
 - Amazon Elastic Beanstalk
 - Amazon API Gateway 
 - AWS CloadFormation 
+
+Просить подтвержение лучше через Email. Нужно будет аппрувнуть. 
