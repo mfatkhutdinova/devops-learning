@@ -13,6 +13,12 @@ Elastic BeansTalk - позволяет быстро инфраструктуру
 
 
 Полная кастомизация через .ebextensions 
+.ebextensions - *.config файлы наших настроек в директории .ebextensions  позволяют полную кастомизацию инфраструктуры для Elastic BeansTalk.
+Elastic BeansTalk запускает файлы в алфавитном порядке. Поэтоуимеет смысл номеровать файлы. Например:
+- 01_create_folders.config 
+- 02_copy_apache_config_files.config
+- 03_...
+
 
 Группы комманд в config файлах:
 packages – скачать и инсталировать прораммы (yum, rpm, msi)
