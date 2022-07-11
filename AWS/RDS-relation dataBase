@@ -9,11 +9,11 @@ RDS - Relation DataBase - база данных
 
 БД:
 - Amazon Aurora (самая дорогая) 
-- MySQL 
+- MySQL (порт 3306)
 - MariaDB
 - PostgreSQL 
 - Oracle 
-- Microsoft SQL Server 
+- Microsoft SQL Server (порт 1433)
 
 БД можно модифицировать после создания. 
 Можно создавать notifincations на email на различные евенты в БД (удаление, падение и т.д.)
