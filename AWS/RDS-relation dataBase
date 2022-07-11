@@ -7,4 +7,13 @@ RDS - Relation DataBase - база данных
 - Backup SnapShots Manual - не стирается при удалении RDS Instance 
 - MultiAZ - создание дополнительного синхронизированного instance в другой AZ только для Fail Tolerance - для отказоустойчивости.
 
+БД:
+- Amazon Aurora (самая дорогая) 
+- MySQL 
+- MariaDB
+- PostgreSQL 
+- Oracle 
+- Microsoft SQL Server 
 
+БД можно модифицировать после создания. 
+Можно создавать notifincations на email на различные евенты в БД (удаление, падение и т.д.)
