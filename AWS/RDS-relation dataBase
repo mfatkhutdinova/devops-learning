@@ -1,0 +1,10 @@
+RDS - Relation DataBase - база данных 
+
+Важные возможносьт сервиса:
+- Public or Private Endpoint - URL базы данных с/без интернет доступа
+- Read Replica - создает дополнительный instance только для чтения
+- Backup SnapShots Automatic - стирается при удалении RDS Instance
+- Backup SnapShots Manual - не стирается при удалении RDS Instance 
+- MultiAZ - создание дополнительного синхронизированного instance в другой AZ только для Fail Tolerance - для отказоустойчивости.
+
+
