@@ -19,6 +19,8 @@ RDS - Relation DataBase - база данных
 Можно создавать notifincations на email на различные евенты в БД (удаление, падение и т.д.)
 
 Как импортировать вашу Базу Данных в SQL Server 
+(Просто так через Restore не получится, вылезет ошибка)
+
 Несколько шагов:
 1. Create S3 bucket in SAME REGION as RDS and upload your .bak files
 2. Create new RDS OptionGroup with SQLSERVER_BACKUP_RESTORE option
