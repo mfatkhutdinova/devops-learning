@@ -17,3 +17,19 @@ RDS - Relation DataBase - база данных
 
 БД можно модифицировать после создания. 
 Можно создавать notifincations на email на различные евенты в БД (удаление, падение и т.д.)
+
+Как импортировать вашу Базу Данных в SQL Server 
+Несколько шагов:
+1. Create S3 bucket in SAME REGION as RDS and upload your .bak files
+2. Create new RDS OptionGroup with SQLSERVER_BACKUP_RESTORE option
+3. Apply this OptionGroup to your RDS INSTEAD of default OptionGroup
+4. Connect to RDS, open NewQuery and execute stored procedure
+
+Command:
+exec msdb.dbo.rds_restore_database
+    @restore_db_name='MyDatabase',
+    @s3_arn_to_restore_from='arn:aws:s3:::mybucketwith-beckupfile/MydatabaseForRDS.bac';
+    
+exec msdb.dbo.rds_task_status;
+
+
