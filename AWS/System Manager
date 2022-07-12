@@ -1,0 +1,23 @@
+Parameter Store - Хранение секретов
+Хранение секретов - бесплатное 
+
+1. Создаем параметры: логины, пароли
+Можно менять параметры, записываются версии (евенты)
+2. IAM -> create Role -> EC2 Role for Simple System Manager -> AmazonEC2RoleforSSM
+3. In EC2 Attach IAM -> shoose your new Role
+4. Теперь EC2 инстанс может видеть эти параметры
+
+Command:
+aws ssm get-parameters --name ParamName --region us-east-1
+aws ssm get-parameters --name ParamName --region us-east-1 --output text 
+aws ssm get-parameters --name ParamName --region us-east-1 --output text --query Parameters[].Value
+aws ssm get-parameters --name PasswordName --region us-east-1 --with-decryption --output text --query Parameters[].Value 
+
+export DBPASSWORD=`aws ssm get-parameters --name DBpassword --region us-east-1 --with-decryption --output text --query Parameters[].Value`
+
+
+RunCommand - Управление EC2 Серверами
+Можно запускать различные команды, не заходя на сервер 
+AWS-RunShellScript
+Output команды выводится на AWS 
+Это работает через aws-amazon-agent. Для некоторых инстансов автоматически добавляется, для остальных нужно будет добавить самому
