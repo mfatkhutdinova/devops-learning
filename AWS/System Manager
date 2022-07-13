@@ -36,3 +36,12 @@ sudo -E amazon-ssm-agent -register -code "activation-code" -id "activation-id" -
 sudo start amazon-ssm-agent
 
 3. Использовать Run Command 
+
+
+Windows Updates - Управление Обновлениями
+1. Создаем роли IAM 
+2. Приаттачиваем к ec2-instance
+3. Объединяем сервера с помощью тэгов. Идем в Tags -> Edit Tag -> Patch Group - appServer (наименование группы)
+4. Заходим в State Manager и создаем Assosiations (сервис, который проверяет все интсансы и говорит, какие пакеты нужно доустановить и т.д.)
+
+
