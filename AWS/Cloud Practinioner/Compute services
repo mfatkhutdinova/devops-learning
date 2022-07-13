@@ -15,3 +15,19 @@ Benefits of EC2:
 - Secure 
 - Cost-Effective 
 - Easy 
+
+Scaling on AWS:
+- Launch new instances in advance of peak period 
+- Use monitoring to programmatically scale out 
+- Automatically scale in 
+- Pay for the resources needed, only when needed
+
+Elastic Load Balanser:
+Automatically distribute traffic across multiple EC2 instances 
+- Increases avialability and fault tolerance
+- Configure health check 
+- Offload encryption and decryption 
+- Types: 
+  - application load balancer (app layer)
+  - network load balancer (network layer)
+  - gateway load balancer (third-party virtual appliances) 
