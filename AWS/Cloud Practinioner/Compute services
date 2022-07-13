@@ -1,0 +1,17 @@
+Compute services:
+1. EC2 - resizable compute capacity
+2. Auto Scaling - encrease or decrease number of instances
+3. Elastic Load Balanser - dstribute incoming traffic
+3. Elastic Container Service - run applications on a managed cluster
+4. Elastic Kubernetes Service - run K8s applications on AWS and on-premises
+5. AWS Lambda - run code in response to events
+
+Benefits of EC2:
+- Elasticity 
+- Control 
+- Flexibility 
+- Integrated 
+- Reliable
+- Secure 
+- Cost-Effective 
+- Easy 
