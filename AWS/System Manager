@@ -21,3 +21,18 @@ RunCommand - Управление EC2 Серверами
 AWS-RunShellScript
 Output команды выводится на AWS 
 Это работает через aws-amazon-agent. Для некоторых инстансов автоматически добавляется, для остальных нужно будет добавить самому
+
+
+Hybrid Infrastructure - Управление Серверами не в AWS
+Можно зарегистрировать свою тачку on-prem, чтобы через Run Command тоже запускать там команды без подключения.
+Для этого нужно:
+1. Создать Activations, после создания получить Activation Code and Activation ID 
+2. Выполнить команды для установки amazon-ssm-agent - https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-managed-linux.html 
+mkdir /tmp/ssm
+curl https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm -o /tmp/ssm/amazon-ssm-agent.rpm
+sudo yum install -y /tmp/ssm/amazon-ssm-agent.rpm
+sudo stop amazon-ssm-agent
+sudo -E amazon-ssm-agent -register -code "activation-code" -id "activation-id" -region "region"
+sudo start amazon-ssm-agent
+
+3. Использовать Run Command 
