@@ -27,3 +27,9 @@ Common S3 use cases:
 - Backup and storage 
 - Application hosting 
 - Media hosting 
+
+Storage classes: 
+S3 Standard                   | ACTIVE DATA
+S3 Standard-Infrequent Access | INFREQUENTLY ACCESSED DATA 
+S3 One Zone-Infrequent Access | INFREQUENTLY ACCESSED DATA 
+S3 Glacier storage classes    | ARCHIVED DATA
