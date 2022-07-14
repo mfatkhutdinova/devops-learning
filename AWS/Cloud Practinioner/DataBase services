@@ -1,0 +1,18 @@
+Purpose-build for specific application use cases 
+Offload time-consuming management tasks
+
+1. RDS - cost-efficient and resizable capacity 
+2. DynamoDB - fact and predictable performance 
+3. ElasticCache - fast, managed information retrieval 
+
+AWS Database Services: 
+- easy to set up, manage, maintain 
+- reduce undifferentiated heavy lifting 
+- push-button high availability 
+- automatic backup/recovery 
+- scale up or down based upon pattern 
+
+Database on EC2:
+- more control/flexibility 
+- operating system access 
+- need features of specific application 
