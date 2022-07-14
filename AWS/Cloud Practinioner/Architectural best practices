@@ -1,0 +1,42 @@
+Cloud Architectural best practices:
+
+1. Design for failure and nothing fails
+- avoid single points of failure
+- multiple instances 
+- multiple availability zones
+- separate dingle server into multiple tiered application
+- for RDS use Multi-AZ feature
+
+2. Build security in every layer
+- encrypt data at rest and in transit
+- enforce principle of least privilege in IAM 
+- implemente both Security Groups and Networs Access Control Lists (NACL)
+- consider advanced security features and services 
+
+3. Leverage different storage options 
+- move static web assets to S3
+- use CloudFront to serve globally 
+- store session state in DynamoDB
+- use ElasticCache between hosts and databases
+
+4. Implement elasticity 
+- implement Auto Scaling policies
+- architect resiliency to reboot and relaunch 
+- leverage managed services like S3 and DynamoDB
+
+5. Think parallel
+- scale horizontally, not vertically 
+- decouple compute from session/state
+- use Elastic Load Balancing
+- right-size your infrastracture 
+
+6. Loose coupling sets you free
+- instead of a single, ordered workflow, use multiple queues 
+- use amazon simple queue service and simple notification service (SQS and SNS)
+- leverage existing services
+
+7. Don't fear constraints 
+- rethink traditional constraints
+- need more RAM?
+- better IOPS for database?
+- response to failure
