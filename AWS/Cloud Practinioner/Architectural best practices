@@ -40,3 +40,25 @@ Cloud Architectural best practices:
 - need more RAM?
 - better IOPS for database?
 - response to failure
+
+Six Pillars:
+1. Operational Excellence 
+2. Security 
+3. Reliability 
+4. Performance Efficienty 
+5. Cost Optimization
+6. Sustainability
+
+AWS has identified four key best practices of cost optimization:
+
+- Rightsizing instances
+Rightsizing is the process of reviewing deployed resources and seeking opportunities to downsize when possible. For example, if an application instance is consistently underutilizing its RAM and CPU, switching that to a smaller instance can offer significant savings while maintaining the same performance.
+
+- Increasing application elasticity
+An example is using auto scaling to ensure that the correct number of instances are available to handle the workload of an application. Scale out during high demand and scale in during low demand.
+
+- Choosing the right pricing model
+An example is using Reserved Instances for workloads that need to run most or all the time, such as production environments. This can have a significant impact on savings compared to on-demand; in some cases, up to 75 percent.
+
+- Optimizing storage
+An example is the S3 Intelligent-Tiering storage class, which is designed to optimize costs by automatically moving data to the most cost-effective storage tier.
