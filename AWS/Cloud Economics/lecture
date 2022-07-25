@@ -1,6 +1,7 @@
 Cloud Economics = Business value and cloud financial management
 Business Value is more that just up front cost savings 
 
+********* Business value ************
 Cloud Value Framework:
 1. Cost savings - The financial benefits of moving to the cloud
 2. Staff productivity - The efficiency gained from reducing or eliminating tasks no longer needed with the cloud
@@ -27,3 +28,21 @@ Security - Uses AWS automation and tools, and provides AWS Identity and Access M
 Operations - Leverages automation, manages services end to end, monitors API access
 Infrastracture - Enables customers to run applications and failovers across multiple AZs and Regions
 Software - automates continuous integration and delivery workflow, runs smaller code deployments
+
+Business agility means responding faster, experementing more and delivering results in the same or less amount of time
+
+
+********* Cloud financial management ************
+Pay for that you use
+
+Planning and forecasting:
+- AWS Pricing Calculator
+- AWS service pricing pages
+- AWS Price list AP
+- AWS Cost Explorer
+- Migration Portfolio Assessment (MPA)
+
+
+On-demand: Pay for compute capacity by the second with no long-term commitments.
+Reserved instances: Make a 1 or 3-year commitment for a significant discount. Best for steady-state workloads
+Spot instances: Spare EC2 capacity; best for fault-tolerant, flexible, and stateless workloads
