@@ -13,3 +13,17 @@ AWS helps customers lower costs with:
 - A consumption-based model
 - AWS pricing models
 - Frequent price reductions
+
+
+Network benefits - Time spent on network planning and forecasting to provision hardware is greatly reduced 
+Application benefits - Time spent coding, testing, and supporting business apps is greatly reduced
+Facilities benefits - Time spent managing power and cooling systems are eliminated
+Security benefits - Penetration testing, vulnerability scanning, and security audits are greatly improved
+Storage benefits - Time spent on supporting physical arrays is eliminated
+Server benefits - Time spent installing, upgrading, and removing hardware is reduced by up to half
+
+Operational resilience = uptime + security 
+Security - Uses AWS automation and tools, and provides AWS Identity and Access Management (IAM)
+Operations - Leverages automation, manages services end to end, monitors API access
+Infrastracture - Enables customers to run applications and failovers across multiple AZs and Regions
+Software - automates continuous integration and delivery workflow, runs smaller code deployments
