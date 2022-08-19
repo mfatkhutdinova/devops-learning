@@ -1,0 +1,9 @@
+CloudTrail - Provides event history of your AWS account activity, including actions taken through the
+AWS Management Console, AWS SDKs, command line tools, and other AWS services 
+
+Amazon CloudWatch - Data and insights to monitor your applications, respond to system-wide performance
+changes, optimize resource utilization, and get a unified view of operational health
+
+AWS Config - Enables you to assess, audit, and evaluate the configurations of your AWS resources.
+Continuously monitors and records your AWS resource configurations and allows you to
+automate the evaluation of recorded configurations against desired configurations
