@@ -92,9 +92,12 @@ Faster long-distance S3 uploads & downloads
 Reduces the variability in Internet routing, congestion and speeds that can affect
 transfers, and logically shortens the distance to S3 for remote applications
 
-
 AWS Storage Gateway
 On-premises access to virtually unlimited cloud storage
 Integrate AWS Cloud storage with existing on-site workloads to simplify storage
 management and reduce costs for key hybrid cloud storage use cases
 
+Amazon Kinesis Data Firehose
+Prepare and load real-time data streams into data stores and analytics services
+Fully managed service that automatically scales to match the throughput of your data
+and requires no ongoing administration. Can batch, compress, transform, and encrypt. 
