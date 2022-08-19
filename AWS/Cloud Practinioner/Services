@@ -7,3 +7,19 @@ changes, optimize resource utilization, and get a unified view of operational he
 AWS Config - Enables you to assess, audit, and evaluate the configurations of your AWS resources.
 Continuously monitors and records your AWS resource configurations and allows you to
 automate the evaluation of recorded configurations against desired configurations
+
+AWS Artifact - Central resource for compliance-related information that matters to you. 
+It provides ondemand access to AWS’ security and compliance reports and select online agreements
+
+Amazon Inspector - Automates security vulnerability assessments throughout your development and
+deployment pipelines or for static production systems - specifically for EC2
+
+Amazon GuardDuty - Threat detection service that continuously monitors for malicious activity and
+unauthorized behavior to protect your accounts, workloads, and S3 data
+
+AWS Identity & Access Management (IAM) - Securely manage access to AWS services and resources.
+Using IAM, you can create and manage AWS users and groups, and use permissions to
+allow and deny their access to AWS resources
+
+AWS Shield - Managed Distributed Denial of Service (DDoS) protection service that safeguards
+applications running on AWS
