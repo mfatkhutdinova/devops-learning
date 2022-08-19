@@ -23,3 +23,20 @@ allow and deny their access to AWS resources
 
 AWS Shield - Managed Distributed Denial of Service (DDoS) protection service that safeguards
 applications running on AWS
+
+AWS Fargate - Serverless compute for containers
+Serverless, pay-as-you-go compute engine that lets you focus on building applications
+without managing servers
+
+Amazon Elastic Container Service - Highly secure, reliable, and scalable way to run containers
+Fully managed container orchestration service that helps you easily deploy, manage, and
+scale containerized applications
+
+Amazon Elastic Kubernetes Service - The most trusted way to run Kubernetes
+Gives you the flexibility to start, run, and scale Kubernetes applications in the AWS Cloud
+or on-premises. Runs upstream Kubernetes and is certified Kubernetes conformant
+
+AWS Lambda - Run code without thinking about servers or clusters. Only pay for what you use.
+Serverless compute service that lets you run code without provisioning or managing
+servers, creating workload-aware cluster scaling logic, maintaining event integrations, or
+managing runtimes
