@@ -31,3 +31,14 @@ Automatically distribute traffic across multiple EC2 instances
   - application load balancer (app layer)
   - network load balancer (network layer)
   - gateway load balancer (third-party virtual appliances) 
+
+
+How will you deliver the application executables?
+Instances
+  • Amazon EC2
+Containers
+  • Amazon ECS
+  • Amazon EKS
+  • AWS Fargate
+Serverless
+  • AWS Lambda
