@@ -51,3 +51,7 @@ Six advantages of cloud computing:
 4. Increase speed and agility 
 5. Realize cost savings 
 6. Go global in minute 
+
+Choose the Right AWS Region
+When you decide which AWS Region to host your applications and workloads, consider four main aspects – latency, price, service availability, and compliance.
+
