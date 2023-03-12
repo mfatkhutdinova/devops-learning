@@ -54,4 +54,4 @@ Six advantages of cloud computing:
 
 Choose the Right AWS Region
 When you decide which AWS Region to host your applications and workloads, consider four main aspects – latency, price, service availability, and compliance.
-
+Regions are clusters of Availability Zones. Availability Zones are clusters of data centers.
