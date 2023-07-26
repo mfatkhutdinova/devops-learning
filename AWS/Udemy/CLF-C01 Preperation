@@ -4,3 +4,21 @@ IAM Credentials report lists all your account's users and the status of their va
 You only want to use the root account to create your first IAM user, and for a few account and service management tasks. For every day and administration tasks, use an IAM user with permissions.
 An IAM policy is an entity that, when attached to an identity or resource, defines their permissions.
 
+
+S3 Encryption 
+Server-side encryption (default)
+1. upload to s3
+2. encrypt
+
+Client-side encryption
+1. encrypt
+2. upload to s3
+
+AWS Snow family 
+highly-security, portable devices to collect and process data at the edge, and migrate data into and out of AWS
+Data migration: Snowcone, Snowball Edge, Snowmobile 
+Edge computiong: Snowcone, Snowball Edge
+
+AWS Snow Family: offline devices to perform data migrations 
+If it takes more than a week to transfer over the network, use Snowball devices!
+
