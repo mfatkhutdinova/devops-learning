@@ -28,6 +28,9 @@ AWS Snowcone is a small, portable, rugged, and secure edge computing and data tr
 Snowball Edge Storage Optimized devices are well suited for large-scale data migrations and recurring transfer workflows, as well as local computing with higher capacity needs.
 
 DB 
+DynamoDB 
+DynamoDB is a fast and flexible non-relational database service for any scale. It can scale with no downtime, it can process millions of requests per second, and is fast and consistent in performance.
+
 Redshift
 Based on Postgresql but not for OLTP
 OLAP - online analytical processing 
@@ -77,10 +80,14 @@ AWS Glue
 Managed extract, transform, and load (ETL) service
 Useful to prepare and transform data for analytics
 Fully serverless service 
+The AWS Glue Data Catalog is a central repository to store structural and operational metadata for all your data assets.
 
 DMS - Database migration service 
 Quickly and securely migrate databases to AWS, resilient, self healing 
 The source database remains available during the migration
+
+Amazon DynamoDB Accelerator (DAX)
+Is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to a 10 times performance improvement—from milliseconds to microseconds—even at millions of requests per second.
 
 Summary:
 Relational db - OLTP: RDS & Aurora (SQL)
