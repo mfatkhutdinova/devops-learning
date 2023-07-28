@@ -82,6 +82,20 @@ DMS - Database migration service
 Quickly and securely migrate databases to AWS, resilient, self healing 
 The source database remains available during the migration
 
-
+Summary:
+Relational db - OLTP: RDS & Aurora (SQL)
+Differences between Multi-AZ, Read Replicas, Multi-Region 
+In-Memory Database: ElasticCache
+Key/Value db: DynamoDB (serverless) & DAX (cache for DynamoDB)
+Warehouse - OLAP: Redshift (SQL)
+Hadoop Cluster: EMR 
+Athena: query data on Amazon S3 (serverless & SQL)
+QuickSight: dashboards on your data (serverless)
+DocumentDB: "Aurora for MongoDB" (JSON - NoSQL database)
+AmazonQLDB: Financial Transactions Ledger (immutable journal, cryptoghraphically verifiable)
+Amazon Managed Blockchain: managed Hyperledger Fabric & Euthereum Blockchains
+Glue: Managed ETL (Extract Transform Load) and Data Catalog service
+Database Migration: DMS
+NeptuneL grapch database
 
 
