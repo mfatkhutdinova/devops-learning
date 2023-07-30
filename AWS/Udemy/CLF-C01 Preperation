@@ -106,3 +106,47 @@ Database Migration: DMS
 NeptuneL grapch database
 
 
+ECS = Elastic Container Service
+Launch Docker containers on AWS
+AWS takes care of starting/stopping containers
+
+Fargate 
+Launch Docker containers on AWS
+You do not provision the infreastracture (no EC2 istances to manage) - simpler!
+AWS just runs containers for you based on the CPU/RAM you need
+
+ECR = Elastic Container Registry 
+Private Docker Registry on AWS
+This is where you store your Docker images so they can be run by ECS or Fargate
+
+Serverless is a new paradigm in which the deveopers don;t have to manage servers anymore
+They just deploy code 
+Serverless == FaaS (Function as a Service)
+Serverless does not mean there are no servers...
+It means you just don't manage/provision/see them
+
+AWS Lambda
+Virtual functions - no servers to manage!
+Limited by time - short executions 
+Run on-demand 
+Scaling is automated 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
