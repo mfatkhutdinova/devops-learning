@@ -158,7 +158,24 @@ Use cases:
 - websites 
 - dev/test envs
 
+Summary:
+Docker: container technology to run applications
+ECS: run Docker containers on EC2 instances 
+Fargate:
+- run docker containers without provisioning the infrastracture 
+- serverless offering (no EC2 instances)
+ECR: private docker images repository 
+Batch: run batch jobs on AWS across managed EC2 instances 
+Lghtsail: predictable & low pricing for simple application & DB stacks
 
+Lambda Summary:
+- lambda is serverless, functin as a Service, seamless scaling, reactive
+- labbda billing: 
+1. by the time x by the RAM provisioned
+2. by the number of invocations
+- language support
+- Invocation time: u[ to 15 minutes
+- API GatewayL expose Lambda functions as HTTP API
 
 
 
