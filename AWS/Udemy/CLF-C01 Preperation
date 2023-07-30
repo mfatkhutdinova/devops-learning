@@ -131,8 +131,10 @@ Limited by time - short executions
 Run on-demand 
 Scaling is automated 
 
+Serverless CRON Job
+ClowdWatch Events EventBridge -> AWS Lambda Function Perform a task
 
-
+AWS Lambda pricing is based on calls and duration.
 
 
 
