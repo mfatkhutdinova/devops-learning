@@ -136,7 +136,27 @@ ClowdWatch Events EventBridge -> AWS Lambda Function Perform a task
 
 AWS Lambda pricing is based on calls and duration.
 
+Batch vs Lambda
+Lambda:
+- Time limit 
+- Limited runtimes
+- Limited temprora disk space
 
+Batch:
+- No time limit 
+- Any runtime as long as it's packaged as a Dockerimage
+- Rely on EBS / instance store for disk space
+- Relies on EC2 (can be managed by AWS)
+
+Amazon Lightsail 
+- Virtual servers, storage, databases, and networking 
+- Low & predictable pricing 
+- Can setup notifications and monitoring of your Lightsail resources 
+- Has high availability but no auto-scaling, limited AWS integrations
+Use cases:
+- simple web applications
+- websites 
+- dev/test envs
 
 
 
