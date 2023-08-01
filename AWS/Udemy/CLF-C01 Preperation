@@ -177,6 +177,13 @@ Lambda Summary:
 - Invocation time: u[ to 15 minutes
 - API GatewayL expose Lambda functions as HTTP API
 
+AWS Elastic Beanstalk 
+- Elastic Beanstalk is a developer cetric view of deploying an application on AWS
+- It uses all the component's: EC2, ASG, ELB, RDC, etc...
+- But it's all in one view that's easy to make sense of!
+- We still full control over the configuration 
+
+Beanstalk = Platform as a Service (PaaS)
 
 
 
