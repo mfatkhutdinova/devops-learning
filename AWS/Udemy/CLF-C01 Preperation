@@ -204,8 +204,13 @@ AWS Cloud9
 - AWS Cloud9 is a cloud IDE for writting, running and debugging code
 - AWS Cloud9 also allows for code collaboration in real-time (pair programming)
 
+AWS System Manager (SSM)
+- helps manage EC2 and On-Premises systems at scale 
+- patching automation for enhanced compliance 
+- run commands across an entire fleet of services
+- store parameter configuration with the SSM Parameter Store 
 
-
+!! "A way to patch your fleet of EC2 instances or On-Premises servers" == SSM
 
 
 
