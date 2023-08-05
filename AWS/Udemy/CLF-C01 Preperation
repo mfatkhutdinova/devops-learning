@@ -253,6 +253,15 @@ Kinesis Data Firehose: load streams into S3, Redshict, ElasticSearch, etc..
 Kinesis Data Analytics: performreal-time analytics on streaming using SQL
 Kinesis Video Streams: monitor real-time video streams for analytics or ML
 
+Amazon SNS 
+The "event publisher" only sends message to one SNS topic 
+As many "event subscribers" as we want to listen to the SNS topic notifications
+Each subscriber to the topic will get all the messages
+Notification, publish subscribe = SNS 
+
+Amazom MQ
+When migrating to the cloud, instead of re-engineering the application to use SQS and SNS, we can use Amazon MQ
+Amazon MQ is managed message brocker service for RabbitMQ and ActiveMQ
 
 
 
