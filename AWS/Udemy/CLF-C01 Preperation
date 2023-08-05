@@ -239,7 +239,19 @@ AWS Local Zones
 Places AWS compute, storage, database, and other selected AWS services closer to end users to run latency-senditive applications
 Extend your VPC to more locations - "Extension of an AWS Region"
 
+Amazon SQS = Simple Queue Service
+Fully managed service (~serverless), use to decople applications
+Messages are deleted after they are read by consumers
+Consumers share the work to read messages & scale horizontally 
+FIFO Queue = First In First Out
 
+Amazon Kinesis
+Kinesis = real-time big data streaming
+Managed service to collect, process and analyze real-time streaming data at any scale
+Kinesis Data Streams: low latency streaming to ingest data at scale from hundreds of thousands of sources
+Kinesis Data Firehose: load streams into S3, Redshict, ElasticSearch, etc..
+Kinesis Data Analytics: performreal-time analytics on streaming using SQL
+Kinesis Video Streams: monitor real-time video streams for analytics or ML
 
 
 
