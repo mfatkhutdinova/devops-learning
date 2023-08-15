@@ -316,8 +316,17 @@ AWS X-Ray - visual analisys of our applications. Advantages:
 - review request behavior 
 - find errors and exceptions 
 
+Amaxon CodeGuru 
+An ML-powered service for automated code reviews and application performance recommendations 
+Provides 2 functions:
+1. CodeGuru Review - automated code reviews for statis code analysis 
+2. CodeGuru Profiler - visibility/recommendations about app performance during runtime (production)
 
-
+AWS Health Dashboard - Service History 
+- Shows all regions, all services health 
+- Shows historical information for each day 
+- Has an RSS feed you can subscribe to 
+- Previously called AWS Service Health Dashboard 
 
 
 
