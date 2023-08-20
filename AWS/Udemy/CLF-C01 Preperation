@@ -405,6 +405,52 @@ For having transitive peering between thousands of VPC and on-premises, hub-and 
 One single Gateway to provide this functionality 
 Works with Direct Connect Gateway, VPN connections 
 
+Security & Compliance 
+- AWS responsobility - Security of the Cloud
+Protecting infra (hardware, software, facilities and networking) that runs all the AWS services 
+Managed services like S3, DynamoDB, RDS, etc
+- Customer responsobility - Security in the Cloud 
+For EC2 instance, customer is responcible for management of the guest OS (including security patches and updates), firewall & network configuration, IAM 
+Encrypting application data 
+- Shared controls:
+Patch managements, Configuration management, awareness & training 
 
+DDOS Protection on AWS
+- AWS Shield Standart: protects against DDOS atack for your website and apps
+- AWS Shield Advanced: 24/7 premium DDoS protection 
+- AWS WAF: Filterspecific requests based on rules 
+- CloudFront and Route 53L:
+  - availability protection using global edge network 
+  - combined with AWS Shield, provides attack mitigaion at the edge 
+
+Be ready to scale - leverage AWS Auto Scaling 
+
+AWS Network Firewall
+- Protect your entire Amazon VPC 
+- From Layer 3 to Layer 7 proyection
+- Any direction 
+
+Data at rest VS Data in transit 
+1. At rest: data stored or archivied on a device 
+2. In transit (in motion): data being moved from one location to another 
+3. We want to encrypt data in both states to protect it!
+For this we leverage encryption keys 
+
+AWS KMS - Key Management Service 
+CloudHSM - AWS provisions encryption hardware 
+
+Types of Customer Master Keys: CMK 
+- Customer Managed CMK: 
+Create, manage and used by the customer, can enable ot disable 
+Possibility of rotation policy 
+- AWS managed CMK: 
+Created, managed and used on the customer's behalf by AWS 
+Used by AWS services 
+- AWS owned CMK:
+Collection of CMKs that an AWS service owns and manages to use in multiple accounts
+AWS can use those to protect resources in your account 
+- CloudHSM Keys 
+Keys generated from your own CloudHSM hardware device 
+Cryptographic operations are performed withing the CloudHSM cluster 
 
 
