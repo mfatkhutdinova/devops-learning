@@ -34,9 +34,14 @@ sudo systemctl start etcd
 ## Useful commands:
 ```
 kubectl top pod -n beebox-mobile --sort-by cpu --selector app=auth
+kubectl get pods -n web -l app=auth
+kubectl top pods -n web -l app=auth
 kubectl get pv --sort-by=.spec.capacity.storage
 kubectl exec quark -n beebox-mobile -- cat /etc/key/key.txt
 kubectl delete service beebox-auth-svc -n beebox-mobile
+kubectl scale --replicas=<expected_replica_num> deployment <deployment_label_name> -n <namespace>
+kubectl create sa webautomation -n web
+kubectl get pods -n web --as=system:serviceaccount:web:webautomation
 
 kubectl get pod beebox-shipping-data -o yaml > beebox-shipping-data.yml
 kubectl edit deployment beebox-web
@@ -190,4 +195,66 @@ spec:
   - name: pv-storage
     persistentVolumeClaim:
       claimName: host-pvc
+
+---
+cloud_user@acgk8s-control:~$ cat web-frontend-svc.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-frontend-svc
+  namespace: web
+spec:
+  type: NodePort
+  selector:
+    app: web-frontend
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30080
+
+---
+cloud_user@acgk8s-control:~$ cat web-frontend-ingress.yml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: web-frontend-ingress
+  namespace: web
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: web-frontend-svc
+            port:
+              number: 80
+
+----			  
+cloud_user@acgk8s-control:~$ cat pod-reader-role.yml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: pod-reader
+rules:
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get", "watch", "list"]
+
+----	
+cloud_user@acgk8s-control:~$ cat rb-pod-reader.yml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: pod-reader
+  namespace: web
+subjects:
+- kind: ServiceAccount
+  name: webautomation
+roleRef:
+  kind: ClusterRole
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
 ```
