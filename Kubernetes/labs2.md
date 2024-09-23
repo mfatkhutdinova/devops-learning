@@ -1,7 +1,7 @@
 ## Create a Networkpolicy That Denies All Access to the Maintenance Pod
 
 Create a new YAML file named np-maintenance.yml:
-````
+```
 vim np-maintenance.yml:
 
 apiVersion: networking.k8s.io/v1
