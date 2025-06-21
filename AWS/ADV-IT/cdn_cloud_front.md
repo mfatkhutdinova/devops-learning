@@ -1,3 +1,4 @@
+# CDN
 CDN - Content Delivery Network состоит из Edge Locations. 
 
 Edge Locations - сервера, предназначенные только для кеширования.
