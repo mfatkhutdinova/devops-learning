@@ -1,3 +1,5 @@
+# Storage services
+
 A reliable, scalable and secure place for data 
 
 Storage services:
@@ -18,9 +20,9 @@ Network-attached block storage for use with EC2 instances:
 - EBS volumes can retain data after EC2 instance termination 
 - allow point-in-time snapshots to S3 GiB increments
 
-Simple Storage Service - S3
-Infinite scalability, greater analysis and faster data retrieval 
-Highly scalable object storage with 99.999999999% durability and 99.99% availability
+Simple Storage Service - S3  
+Infinite scalability, greater analysis and faster data retrieval   
+Highly scalable object storage with 99.999999999% durability and 99.99% availability  
 
 Common S3 use cases:
 - Data lakes
@@ -28,8 +30,10 @@ Common S3 use cases:
 - Application hosting 
 - Media hosting 
 
-Storage classes: 
-S3 Standard                   | ACTIVE DATA
-S3 Standard-Infrequent Access | INFREQUENTLY ACCESSED DATA 
-S3 One Zone-Infrequent Access | INFREQUENTLY ACCESSED DATA 
-S3 Glacier storage classes    | ARCHIVED DATA
+Storage classes:  
+| Class                           |        Data                |
+|---------------------------------|----------------------------|
+| S3 Standard                     | ACTIVE DATA   
+| S3 Standard-Infrequent Access   | INFREQUENTLY ACCESSED DATA 
+| S3 One Zone-Infrequent Access   | INFREQUENTLY ACCESSED DATA    
+| S3 Glacier storage classes      | ARCHIVED DATA  
