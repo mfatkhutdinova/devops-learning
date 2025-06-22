@@ -1,7 +1,9 @@
 # IAM - Global Service
 
 IAM Credentials report lists all your account's users and the status of their various credentials. The other IAM Security Tool is IAM Access Advisor. It shows the service permissions granted to a user and when those services were last accessed.  
+
 You only want to use the root account to create your first IAM user, and for a few account and service management tasks. For every day and administration tasks, use an IAM user with permissions.  
+
 An IAM policy is an entity that, when attached to an identity or resource, defines their permissions.  
 
 To access AWS, you have three options:  
