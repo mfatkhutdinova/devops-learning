@@ -1,4 +1,4 @@
-Cloud Architectural best practices:
+# Cloud Architectural best practices
 
 1. Design for failure and nothing fails
 - avoid single points of failure
@@ -49,9 +49,9 @@ Six Pillars:
 5. Cost Optimization
 6. Sustainability
 
-AWS has identified four key best practices of cost optimization:
+AWS has identified four key best practices of cost optimization:  
 
-- Rightsizing instances
+- Rightsizing instances  
 Rightsizing is the process of reviewing deployed resources and seeking opportunities to downsize when possible. For example, if an application instance is consistently underutilizing its RAM and CPU, switching that to a smaller instance can offer significant savings while maintaining the same performance.
 
 - Increasing application elasticity
