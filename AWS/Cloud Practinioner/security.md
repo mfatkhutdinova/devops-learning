@@ -1,3 +1,5 @@
+# Security
+
 - Inherit benefits from AWS data center and network architecture
 - Similar to on premises data centers, without maintaining facilities and hardware 
 - Can be easily automated 
@@ -40,8 +42,8 @@ Incident Respose:
 1. Amazon Detective
 2. CloudEndure 
 
-AWS is responsible for the security OF the Cloud
-Customers and APN partners are responsible for security IN the Cloud 
+AWS is responsible for the security OF the Cloud  
+Customers and APN partners are responsible for security IN the Cloud   
 
 Amazon Identify and Acess Management (IAM):
 Securily manage access to AWS services and resources 
