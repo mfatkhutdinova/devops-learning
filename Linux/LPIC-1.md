@@ -63,39 +63,38 @@ Procfs - иерархическое представление всех проц
 - 5 - RedHat/Suse - GUI 
 - 6 - перезагрузка 
 
-Init - управление инииализацией 
-Telinir - управление процессом init 
-Wall - вывод сообщения пользователям системы 
-Halt - выключение компьютера 
-Reboot - перезагрузка компьютера 
-Shutdown - запланированное выключение 
-Service - start | stop | reload | restart 
+**Init** - управление инииализацией  
+**Telinir** - управление процессом init   
+**Wall** - вывод сообщения пользователям системы   
+**Halt** - выключение компьютера   
+**Reboot** - перезагрузка компьютера   
+**Shutdown** - запланированное выключение   
+**Service** - start | stop | reload | restart   
 
-  init 1/telinit 1 - перейти на 1-ый уровень загрузки .
-  wall "Some text" - сказать что-то всем пользователям .
+init 1/telinit 1 - перейти на 1-ый уровень загрузки  
+wall "Some text" - сказать что-то всем пользователям   
 
-Процессы инииализации и упраления системой. systemd .
-  Unit - модули, которыми оперирует systemd: .
-    .service - службы .
-    .mount - точки монтирования .
-    .device - устройства .
-    .socket - сокеты .
+## Процессы инииализации и упраления системой. systemd   
+Unit - модули, которыми оперирует systemd:    
+- .service - службы 
+- .mount - точки монтирования 
+- .device - устройства 
+- .socket - сокеты 
 
-  /usr/lib/systemd - директория с юнитами по умолчанию .
-  /etc/systemd - директория с управляемыми юнитами .
+/usr/lib/systemd - директория с юнитами по умолчанию   
+/etc/systemd - директория с управляемыми юнитами   
 
-  Уровни загрузки: .
-  0   poweroff.target - выключение .
-  1   rescue.target - однопользовательский режим .
-  2,4 multi-user.target - настраиваемые режимы .
-  3   multi-user.target - многопользовательский режим .
-  5   graphical.target - графика .
-  6   reboot.target - перезагрузка .
+#### Уровни загрузки: 
+- 0   poweroff.target - выключение 
+- 1   rescue.target - однопользовательский режим 
+- 2,4 multi-user.target - настраиваемые режимы 
+- 3   multi-user.target - многопользовательский режим 
+- 5   graphical.target - графика 
+- 6   reboot.target - перезагрузка 
 
-  systemctl list-units --type=target   узнать запущенные таргеты 
-  runlevel - узнать уровень загрузчика 
-  journald - служба журналирования 
-  systemctl reboot | poweroff | suspend | hibernate | hybrid-sleep 
-  systemctl start | reload | restart | status 
-  
-Инициализация системы в стиле upstart .
+systemctl list-units --type=target - узнать запущенные таргеты   
+- runlevel - узнать уровень загрузчика 
+- journald - служба журналирования 
+- systemctl reboot | poweroff | suspend | hibernate | hybrid-sleep 
+- systemctl start | reload | restart | status 
+
