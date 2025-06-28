@@ -1,3 +1,5 @@
+# Useful commands
+
 scp -r zeppelin@m1-zeppelin01p:/opt/app/zeppelin_cmn/helium-repo zeppelin_fnr/
 tail somefile - читает заданный в качестве аргумента файл и выводит его последнюю часть («хвост»)
 head somefile - читает заданный в качестве аргумента файл и выводит его первую часть 
