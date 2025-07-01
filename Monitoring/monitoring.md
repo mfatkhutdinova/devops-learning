@@ -51,3 +51,22 @@ Prometheus работает по системе Pull.
 | MySQL Server Exporter        | Мониторинг MySQL серверов   | 
 | Apache Exporter              | Мониторинг Apache серверов  |
 | NVIDIA GPU Exporter          | Мониторинг NVIDIA GPU       |
+
+### Prometheus Metrics
+- После того, как вы устанавливаете и запускаете Exporter, все метрики, которые он мониторинг и собирает, будут доступны ккак Web страничка под определенным HTTP портом
+- Например, Node Exporter:
+    - если Private IP вашего сервера 10.0.0.1
+    - Node Exporter публикует все метрики на HTTP Port 9100
+    - По адресу http://10.0.0.1:9100 будет информация об Exporter
+    - По адресу http://10.0.0.1:9100/metrics будут сами метрики
+ 
+### Prometheus Main Files and Folders 
+```
+data/
+prometheus - binary file
+prometheus.yaml
+```
+
+**PromQL** - Prometheus Query Language.   
+
+
