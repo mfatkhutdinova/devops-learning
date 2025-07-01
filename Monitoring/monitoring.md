@@ -29,11 +29,11 @@
 Prometheus работает по системе Pull.
 
 ## Monitoring vs Observability
-Monitoring:  
+**Monitoring**:  
 - процесс сбора данных и создания отчетов по различным показателям, определяюшим работоспособность системы
 - мониторинг - это сбор данных об отдельных компонентах
 
-Observability:  
+**Observability**:  
 - исследовательский процесс, он изучает взаимодействие комнонетов распределенной системы и данные, собранные в ходе мониторинга, чтобы найти основную причину проблем (root cause)
 
 ## Prometheus
@@ -44,3 +44,10 @@ Observability:
 **Exporter** - Monitoring Agent в Prometheus.  
 Есть огромное кол-во готовых Exporters официальных и third-party:
 
+| Название Prometheus Exporter |        Что мониторит        | 
+|------------------------------|-----------------------------|
+| Node Exporter                | Мониторинг Linux серверов   | 
+| Windows Exporter             | Мониторинг Windows серверов | 
+| MySQL Server Exporter        | Мониторинг MySQL серверов   | 
+| Apache Exporter              | Мониторинг Apache серверов  |
+| NVIDIA GPU Exporter          | Мониторинг NVIDIA GPU       |
