@@ -1,6 +1,6 @@
 # VPC Section
 
-VPC - Virtual Pricate Cloud: private network to deploy your resources (regional resource)  
+VPC - Virtual Private Cloud: private network to deploy your resources (regional resource)  
 Subnet - allow you to partition your network inside your VPC (Availability Zone resource)  
 A Public subnet - is a subnet that is accessibke from the Internet   
 A Private subnet - is a subnet that is not accessible from the Internet   
