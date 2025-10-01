@@ -1,54 +1,52 @@
-Amazon WorkSpaces
-• Managed Desktop as a Service (DaaS) solution to easily provision Windows or Linux desktops
-• Great to eliminate management of on-premise VDI (Virtual Desktop Infrastructure)
-• Fast and quickly scalable to thousands of users
-• Secured data – integrates with KMS
-• Pay-as-you-go service with monthly or hourly rates
+#### Amazon WorkSpaces
+• Managed Desktop as a Service (DaaS) solution to easily provision Windows or Linux desktops   
+• Great to eliminate management of on-premise VDI (Virtual Desktop Infrastructure)    
+• Fast and quickly scalable to thousands of users    
+• Secured data – integrates with KMS    
+• Pay-as-you-go service with monthly or hourly rates    
 
-Amazon AppStream 2.0
-• Desktop Application Streaming Service
-• Deliver to any computer, without acquiring, provisioning infrastructure
-• The application is delivered from within a web browser
+#### Amazon AppStream 2.0   
+• Desktop Application Streaming Service    
+• Deliver to any computer, without acquiring, provisioning infrastructure   
+• The application is delivered from within a web browser   
 
-AWS IoT Core
-• IoT stands for “Internet of Things” – the network of internet-connected devices that are able to collect and transfer data
-• AWS IoT Core allows you to easily connect IoT devices to the AWS Cloud
-• Serverless, secure & scalable to billions of devices and trillions of messages
-• Your applications can communicate with your devices even when they aren’t connected
-• Integrates with a lot of AWS services (Lambda, S3, SageMaker, etc.)
-• Build IoT applications that gather, process, analyze, and act on data
+#### AWS IoT Core   
+• IoT stands for “Internet of Things” – the network of internet-connected devices that are able to collect and transfer data    
+• AWS IoT Core allows you to easily connect IoT devices to the AWS Cloud    
+• Serverless, secure & scalable to billions of devices and trillions of messages   
+• Your applications can communicate with your devices even when they aren’t connected   
+• Integrates with a lot of AWS services (Lambda, S3, SageMaker, etc.)   
+• Build IoT applications that gather, process, analyze, and act on data   
 
-Amazon Elastic Transcoder
-Elastic Transcoder is used to convert media files stored in S3 into media
-files in the formats required by consumer playback devices (phones
-etc..)
+#### Amazon Elastic Transcoder
+Elastic Transcoder is used to convert media files stored in S3 into media files in the formats required by consumer playback devices (phones etc..)
 
-AWS AppSync
-• Store and sync data across mobile and web apps in real-time
-• Makes use of GraphQL (mobile technology from Facebook)
-• Client Code can be generated automatically
-• Integrations with DynamoDB / Lambda
-• Real-time subscriptions
-• Offline data synchronization (replaces Cognito Sync)
-• Fine Grained Security
-• AWS Amplify can leverage AWS AppSync in the background!
+#### AWS AppSync
+• Store and sync data across mobile and web apps in real-time   
+• Makes use of GraphQL (mobile technology from Facebook)    
+• Client Code can be generated automatically   
+• Integrations with DynamoDB / Lambda  
+• Real-time subscriptions  
+• Offline data synchronization (replaces Cognito Sync)  
+• Fine Grained Security  
+• AWS Amplify can leverage AWS AppSync in the background!  
 
-AWS Amplify
-• A set of tools and services that helps you develop and deploy scalable full stack web and mobile applications
-• Authentication, Storage, API (REST, GraphQL), CI/CD, PubSub, Analytics, AI/ML Predictions, Monitoring, Source Code from AWS, GitHub, etc…
+#### AWS Amplify
+• A set of tools and services that helps you develop and deploy scalable full stack web and mobile applications  
+• Authentication, Storage, API (REST, GraphQL), CI/CD, PubSub, Analytics, AI/ML Predictions, Monitoring, Source Code from AWS, GitHub, etc…  
 
-AWS Device Farm
-• Fully-managed service that tests your web and mobile apps against desktop browsers, real mobile devices, and tablets
-• Run tests concurrently on multiple devices (speed up execution)
-• Ability to configure device settings (GPS, language, Wi-Fi, Bluetooth, …)
+#### AWS Device Farm  
+• Fully-managed service that tests your web and mobile apps against desktop browsers, real mobile devices, and tablets  
+• Run tests concurrently on multiple devices (speed up execution)  
+• Ability to configure device settings (GPS, language, Wi-Fi, Bluetooth, …)  
 
-AWS Backup
-• Fully-managed service to centrally manage and automate backups across AWS services
-• On-demand and scheduled backups
-• Supports PITR (Point-in-time Recovery)
-• Retention Periods, Lifecycle Management, Backup Policies, …
-• Cross-Region Backup
-• Cross-Account Backup (using AWS Organizations)
+#### AWS Backup
+• Fully-managed service to centrally manage and automate backups across AWS services  
+• On-demand and scheduled backups  
+• Supports PITR (Point-in-time Recovery)  
+• Retention Periods, Lifecycle Management, Backup Policies, …  
+• Cross-Region Backup  
+• Cross-Account Backup (using AWS Organizations)  
 
 AWS Elastic Disaster Recovery (DRS)
 • Used to be named “CloudEndure Disaster Recovery”
