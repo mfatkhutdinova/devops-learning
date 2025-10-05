@@ -37,6 +37,47 @@ With AWS Health - Your Account Health Dashboard, alerts are triggered by changes
 
 **AWS Key Management Service (AWS KMS)** - AWS Key Management Service (AWS KMS) makes it easy for you to create and manage cryptographic keys and control their use across a wide range of AWS services and in your applications. 
 
+### There are three fundamental drivers of cost with AWS: compute, storage, and outbound data transfer.
+
+**Amazon Eventbridge** - service that provides real-time access to changes in data in AWS services, your own applications, and software as a service (SaaS) applications without writing code. Amazon EventBridge Scheduler is a serverless task scheduler that simplifies creating, executing, and managing millions of schedules across AWS services without provisioning or managing underlying infrastructure.
+
+**Amazon EMR** is the industry-leading cloud big data platform for processing vast amounts of data using open source tools such as Hadoop, Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi, and Presto. Amazon EMR can be used to provision resources to run big data workloads on Hadoop clusters.
+
+**AWS Step Functions** - AWS Step Functions service lets you coordinate multiple AWS services into serverless workflows. You can design and run workflows that stitch together services such as AWS Lambda, AWS Glue and Amazon SageMaker.
+
+**AWS Batch** - You can use AWS Batch to plan, schedule and execute your batch computing workloads across the full range of AWS compute services.
+
+**AWS Partner Network (APN)** - Organizations can take help from the AWS Partner Network (APN) to identify the right AWS services to build solutions on AWS Cloud.
+
+**AWS Global Accelerator** is a service that improves the availability and performance of your applications with local or global users. 
+
+**AWS OpsWorks** - AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet
+
+**AWS Config** is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. 
+**Think resource-specific history, audit, and compliance; think Config.**
+
+# Routing policies
+**Simple routing policy** – Use for a single resource that performs a given function for your domain, for example, a web server that serves content for the example.com website. You can use simple routing to create records in a private hosted zone.
+
+**Failover routing policy** – Use when you want to configure active-passive failover. You can use failover routing to create records in a private hosted zone.
+
+**Geolocation routing policy** – Use when you want to route traffic based on the location of your users. You can use geolocation routing to create records in a private hosted zone.
+
+**Geoproximity routing policy** – Use when you want to route traffic based on the location of your resources and, optionally, shift traffic from resources in one location to resources in another location. You can use geoproximity routing to create records in a private hosted zone.
+
+**Latency routing policy** – Use when you have resources in multiple AWS Regions and you want to route traffic to the Region that provides the best latency. You can use latency routing to create records in a private hosted zone.
+
+**IP-based routing policy** – Use when you want to route traffic based on the location of your users, and have the IP addresses that the traffic originates from.
+
+**Multivalue answer routing policy** – Use when you want Route 53 to respond to DNS queries with up to eight healthy records selected at random. You can use multivalue answer routing to create records in a private hosted zone.
+
+**Weighted routing policy** – Use to route traffic to multiple resources in proportions that you specify. You can use weighted routing to create records in a private hosted zone.
+
+
+
+
+
+
 
 
 
