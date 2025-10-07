@@ -73,10 +73,23 @@ With AWS Health - Your Account Health Dashboard, alerts are triggered by changes
 
 **Weighted routing policy** – Use to route traffic to multiple resources in proportions that you specify. You can use weighted routing to create records in a private hosted zone.
 
+**AWS Fargate** - AWS Fargate is a serverless compute engine for containers. It works with both Amazon Elastic Container Service (Amazon ECS) and Amazon Elastic Kubernetes Service (Amazon EKS).
 
+**AWS Snowball** - is a data migration and edge computing device. If you have large quantities of data you need to migrate into AWS, offline data transfer with AWS Snowball can overcome the challenge of limited bandwidth, and avoid the need to lease additional bandwidth. 
 
+## A JSON policy document includes these elements:
+- Optional policy-wide information at the top of the document
+- One or more individual statements
 
-
+Each statement includes information about a single permission. The information in a statement is contained within a series of elements.
+1. Version – Specify the version of the policy language that you want to use. As a best practice, use the latest 2012-10-17 version.
+2. Statement – Use this main policy element as a container for the following elements. You can include more than one statement in a policy.
+3. Sid (Optional) – Include an optional statement ID to differentiate between your statements.
+4. Effect – Use Allow or Deny to indicate whether the policy allows or denies access.
+5. Principal (Required in only some circumstances) – If you create a resource-based policy, you must indicate the account, user, role, or federated user to which you would like to allow or deny access. If you are creating an IAM permissions policy to attach to a user or role, you cannot include this element. The principal is implied as that user or role.
+6. Action – Include a list of actions that the policy allows or denies.
+7. Resource (Required in only some circumstances) – If you create an IAM permissions policy, you must specify a list of resources to which the actions apply. If you create a resource-based policy, this element is optional. If you do not include this element, then the resource to which the action applies is the resource to which the policy is attached.
+8. Condition (Optional) – Specify the circumstances under which the policy grants permission.
 
 
 
