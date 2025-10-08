@@ -91,6 +91,44 @@ Each statement includes information about a single permission. The information i
 7. Resource (Required in only some circumstances) – If you create an IAM permissions policy, you must specify a list of resources to which the actions apply. If you create a resource-based policy, this element is optional. If you do not include this element, then the resource to which the action applies is the resource to which the policy is attached.
 8. Condition (Optional) – Specify the circumstances under which the policy grants permission.
 
+**Amazon Kendra** is an intelligent search service powered by machine learning. Kendra reimagines enterprise search for your websites and applications so your employees and customers can easily find the content they are looking for, even when it’s scattered across multiple locations and content repositories within your organization.
+
+**Penetration Testing** - AWS customers can carry out security assessments or penetration tests against their AWS infrastructure without prior approval for few common AWS services. Customers are not permitted to conduct any security assessments of AWS infrastructure, or the AWS services themselves.
+
+**Amazon ElastiCache** allows you to seamlessly set up, run, and scale popular open-Source compatible in-memory data stores in the cloud.
+
+A network access control list (network ACL) contains a numbered list of rules and evaluates these rules in the increasing order while deciding whether to allow the traffic
+A security group is stateful, that is, it automatically allows the return traffic
+
+Which of the following AWS services have data encryption automatically enabled?
+1. AWS Storage Gateway
+2. Amazon Simple Storage Service (Amazon S3)
+
+Which of the following are components of an AWS Site-to-Site VPN?
+Customer gateway and Virtual private gateway (VGW)
+
+**A VPC endpoint** enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.
+
+ Only **Amazon S3 and Amazon DynamoDB** support **VPC gateway endpoint**. All other services that support VPC Endpoints use a VPC interface endpoint (note that Amazon S3 supports the VPC interface endpoint as well).
+
+**Amazon Redshift** is a fast, fully managed cloud data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and your existing Business Intelligence (BI) tools.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
